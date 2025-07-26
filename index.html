@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FirstAidNow</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>FirstAidNow 🩺</h1>
+    <p>Your quick guide to essential first aid steps</p>
+    <button id="toggle-theme" class="theme-btn">🌙 Dark Mode</button>
+
+  </header>
+
+  <section class="card-section">
+    <div class="card" onclick="toggleAccordion('cpr')">🚑 CPR</div>
+    <div class="card" onclick="toggleAccordion('choking')">🫁 Choking</div>
+    <div class="card" onclick="toggleAccordion('burns')">🔥 Burns</div>
+  </section>
+
+  <section id="accordion-section">
+    <div class="accordion" id="cpr">
+      <h3>CPR (Cardiopulmonary Resuscitation)</h3>
+      <ul>
+        <li>Check for responsiveness.</li>
+        <li>Call emergency services (112/108).</li>
+        <li>Begin 30 chest compressions at 100–120 bpm.</li>
+        <li>Give 2 rescue breaths.</li>
+        <li>Repeat until help arrives.</li>
+      </ul>
+    </div>
+
+    <div class="accordion" id="choking">
+      <h3>Choking</h3>
+      <ul>
+        <li>Ask: "Are you choking?"</li>
+        <li>Encourage coughing if mild.</li>
+        <li>If severe: Give 5 back blows + 5 abdominal thrusts.</li>
+        <li>Repeat until object is expelled or person becomes unconscious.</li>
+      </ul>
+    </div>
+
+    <div class="accordion" id="burns">
+      <h3>Burns</h3>
+      <ul>
+        <li>Cool the burn under running water for 10-15 minutes.</li>
+        <li>Do not apply ice or creams.</li>
+        <li>Cover with clean cloth or cling film.</li>
+        <li>Seek medical help if severe.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="emergency">
+    <h2>Emergency Numbers (India)</h2>
+    <ul>
+      <li>🚨 General Emergency: <strong>112</strong></li>
+      <li>🚑 Ambulance: <strong>108</strong></li>
+      <li>🚒 Fire: <strong>101</strong></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Designed by team puzzle</p>
+  </footer>
+</body>
+</html>
